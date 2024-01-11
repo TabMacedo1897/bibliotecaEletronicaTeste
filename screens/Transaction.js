@@ -1,16 +1,26 @@
 import React, {Component} from 'react'
-import {View, Text, Stylesheet, TouchableOpacity} from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground, Image} from 'react-native'
 
 export default class TransactionScreen extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text>Tela de Transação</Text>
+                <ImageBackground>
+                    <View style={styles.containerImagens}>
+                        <Text>Ola</Text>
+                        <Image/>
+                        <Image/>
+                    </View>
+                    
+                    <View style={styles.containerInputs}>
+
+                    </View>
+                </ImageBackground>
             </View>
         )
     }
 }
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     container:{
        flex: 1,
        justifyContent: "center",
